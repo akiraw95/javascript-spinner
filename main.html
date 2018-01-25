@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Random Generator</h2>
+
+<p>Press the button for a random.</p>
+
+<button onclick="myFunction()">Go</button>
+
+<p id="demo">Item is ???</p>
+
+<script>
+function myFunction() {
+  var numbers = ["SnS", "DB", "H", "HH", "L", "GL", "LS", "GS", "SA", "CB", "IG", "B", "LBG", "HBG", "WILD"];
+  var randInt= Math.floor(Math.random() * numbers.length);
+  var item = numbers[randInt];
+  document.getElementById("demo").innerHTML = "Item is " + item;
+  }
+</script>
+
+</body>
+</html>
